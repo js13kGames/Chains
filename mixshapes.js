@@ -165,17 +165,17 @@
 	  var Distance_x = Math.abs(circle.ct_x - rect.ct_x);
       var Distance_y = Math.abs(circle.ct_y - rect.ct_y);
 
-    if (Distance_x > rect.width/2 + circle.r +0.2)  return false; 
+    if (Distance_x > rect.width/2 + circle.r +0.4)  return false; 
 	console.log("int 1");
-    if (Distance_y > rect.height/2 + circle.r+0.2)  return false; 
+    if (Distance_y > rect.height/2 + circle.r+0.4)  return false; 
 	console.log("int 2");
-    if (Distance_x <= rect.width/2+0.2)	return true;
+    if (Distance_x <= rect.width/2+.4)	return true;
 	console.log("int 3");
-  	if (Distance_y <= rect.height/2 +0.2)  return true; 
+  	if (Distance_y <= rect.height/2 +0.4)  return true; 
 	console.log("int 4");
     var cornerDistance_sq = Math.pow(Distance_x - rect.width/2, 2) + Math.pow(Distance_y - rect.height/2, 2);
 
-    return cornerDistance_sq -0.2 <= Math.pow(circle.r, 2);	  	  
+    return cornerDistance_sq -.4 <= Math.pow(circle.r, 2);	  	  
 }
 	 
 	 function DrawMistake(shape)
